@@ -10,8 +10,20 @@ namespace linesProblemfinal
             double line1Length = Main2();
             Console.WriteLine("Enter Co-ordinates of 2nd Line");
             double line2Length = Main2();
-            string result = line1Length.Equals(line2Length) == true ? "Two lines are equal" : "Two lines are not equal";
-            Console.WriteLine(result);
+            int result = line1Length.CompareTo(line2Length);
+
+            switch (result)
+            {
+                case 0:
+                    Console.WriteLine("Two lines are equal");
+                    break;
+                case 1:
+                    Console.WriteLine("Line 1 is greater than Line 2");
+                    break;
+                default:
+                    Console.WriteLine("Line 2 is greater than Line 1");
+                    break;
+            }
         }
         public static double Main2()
         {
