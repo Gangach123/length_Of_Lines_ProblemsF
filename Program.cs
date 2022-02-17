@@ -6,11 +6,11 @@ namespace linesProblemfinal
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("Enter Co-ordinates of 1st Line");
-            double line1Length = Main2();
-            Console.WriteLine("Enter Co-ordinates of 2nd Line");
-            double line2Length = Main2();
-            int result = line1Length.CompareTo(line2Length);
+            Console.WriteLine("Enter values of first Line");
+            double lengthOfLine = Main2();
+            Console.WriteLine("Enter values of secondnd Line");
+            double lengthOfSecLine = Main2();
+            int result = lengthOfLine.CompareTo(lengthOfSecLine);
 
             switch (result)
             {
