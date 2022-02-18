@@ -13,7 +13,7 @@ namespace linesProblemfinal
             double valueOfX2 = Convert.ToDouble(Console.ReadLine());
             Console.Write("Value of the Y2:");
             double valueOfY2 = Convert.ToDouble(Console.ReadLine());
-            double lengthOfALine = (int)(Math.Pow(valueOfX2 - valueOfY1, 2) + Math.Pow(valueOfX2 + valueOfY1, 2));
+            double lengthOfALine = Math.Pow(Math.Pow(valueOfX2 - valueOfY1, 2) + Math.Pow(valueOfX2 + valueOfY1, 2),0.5);
             
             Console.WriteLine(lengthOfALine);
 
